@@ -14,13 +14,13 @@
 
 $(document).ready(function() {
   $("form#character").submit(function(event) {
-    var color = $("#color").val();
-    var height = parseInt($("#height").val());
-    var food = $("#food").val();
+    var color = $("select#color").val();
+    var height = parseInt($("select#height").val());
+    var food = $("select#food").val();
 
-    if (color === "red" && height <=160 && food === "hotdog") {
+    if (color === "Red" && height <=160 && food === "hotdog") {
     var characterName = 'derek';}
-    else if (color === "purple" && height >=160 && food === "burger"){
+    else if (color === "Purple" && height >=160 && food === "burger"){
       var characterName = 'hansel';}
 
     else {
